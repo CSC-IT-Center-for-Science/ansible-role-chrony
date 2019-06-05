@@ -19,7 +19,7 @@
   package:
     name: ntp
     state: absent
-  when: chrony_remove_ntp
+  when: chrony_remove_ntp|bool
 
 - name: ensure chrony requirements packages are installed
   package:
